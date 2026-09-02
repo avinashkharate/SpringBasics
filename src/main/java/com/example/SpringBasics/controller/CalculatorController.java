@@ -13,11 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/cal")
 public class CalculatorController {
 
-    CalculatorService calculatorService ;
+//    CalculatorService calculatorService ;
+//
+//    public CalculatorController(CalculatorService calculatorService) {
+//        this.calculatorService = calculatorService;
+//    }
 
-    public CalculatorController(CalculatorService calculatorService) {
-        this.calculatorService = calculatorService;
-    }
+
+    @Autowired
+    CalculatorService calculatorService;
+
 
     @GetMapping("/sum/{firstInt}/{secondtInt}")
     public ResponseEntity<Integer> sum(
