@@ -20,9 +20,15 @@ public class CalculatorController {
 //    }
 
 
-    @Autowired
+//    @Autowired
+//    CalculatorService calculatorService;
+
     CalculatorService calculatorService;
 
+    @Autowired
+    public void setCalculatorService(CalculatorService calculatorService) {
+            this.calculatorService = calculatorService;
+    }
 
     @GetMapping("/sum/{firstInt}/{secondtInt}")
     public ResponseEntity<Integer> sum(
