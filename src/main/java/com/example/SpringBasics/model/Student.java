@@ -2,10 +2,6 @@ package com.example.SpringBasics.model;
 
 import jakarta.persistence.*;
 
-/**
- * Student entity mapped directly via Hibernate annotations.
- * No Spring Data JPA is used — this class is registered in hibernate.cfg.xml.
- */
 @Entity
 @Table(name = "students")
 public class Student {
