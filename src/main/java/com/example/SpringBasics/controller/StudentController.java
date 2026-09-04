@@ -7,6 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * REST controller exposing Student API endpoints.
  *
@@ -47,5 +49,18 @@ public class StudentController {
 
         return ResponseEntity.ok(student);
     }
+
+    @GetMapping()
+    public ResponseEntity<List<Student>> getAllStudent() {
+        List<Student> student = studentService.getAllStudent();
+
+        if (student == null) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Student with such Id does not exist");
+        }
+
+        return ResponseEntity.ok(student);
+    }
+
+
 }
 
