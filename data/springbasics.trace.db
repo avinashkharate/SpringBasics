@@ -1,0 +1,18 @@
+2026-09-05 19:11:38.750890+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:44.835997+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:47.114978+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:49.967035+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:54.537646+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:55.530819+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
