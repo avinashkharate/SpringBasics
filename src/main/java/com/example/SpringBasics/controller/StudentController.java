@@ -7,6 +7,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * REST controller exposing Student API endpoints.
  *
@@ -33,6 +35,15 @@ public class StudentController {
         return ResponseEntity.status(HttpStatus.CREATED).body(saved);
     }
 
+    @PutMapping("/update/{id}")
+    public ResponseEntity<Student> updateStudent(@PathVariable Long id)
+    {
+        Student student = studentService.updateStudent(id);
+
+
+        return ResponseEntity.ok(student);
+
+    }
     /**
      * Get a student by ID.
      * Returns 404 if not found.
@@ -47,5 +58,18 @@ public class StudentController {
 
         return ResponseEntity.ok(student);
     }
+
+    @GetMapping()
+    public ResponseEntity<List<Student>> getAllStudent() {
+        List<Student> student = studentService.getAllStudent();
+
+        if (student == null) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Student with such Id does not exist");
+        }
+
+        return ResponseEntity.ok(student);
+    }
+
+
 }
 
