@@ -36,6 +36,17 @@ public class StudentRepoEntityManager {
         entityManager.merge(student);
         return student;
     }
+
+    public Student deleteById(Long id)
+    {
+        Student student= entityManager.find(Student.class,id);
+
+         entityManager.remove(student);
+         return student;
+
+    }
+
+
     public List<Student> findAll() {
         return entityManager.createQuery("SELECT s FROM Student s", Student.class).getResultList();
     }
