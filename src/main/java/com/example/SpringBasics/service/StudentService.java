@@ -39,6 +39,13 @@ public class StudentService {
         return student;
     }
 
+    @Transactional
+    public Student deleteById(Long id) {
+        Student student = studentRepoEntityManager.deleteById(id);
+
+        return student;
+    }
+
     public List<Student> getAllStudent() {
         return studentRepoEntityManager.findAll();
     }
