@@ -1,5 +1,6 @@
 package com.example.SpringBasics.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 @Entity
@@ -15,7 +16,21 @@ public class Student {
 
     private String email;
 
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "profile_id", referencedColumnName = "id")
+    @JsonIgnoreProperties("student")
+    private StudentProfile profile;
+
+
     // ----- Constructors -----
+
+    public StudentProfile getProfile() {
+        return profile;
+    }
+
+    public void setProfile(StudentProfile profile) {
+        this.profile = profile;
+    }
 
     public Student() {}
 
@@ -52,6 +67,11 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{id=" + id + ", name='" + name + "', email='" + email + "'}";
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", profile=" + profile +
+                '}';
     }
 }

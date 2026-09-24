@@ -1,0 +1,32 @@
+2026-09-05 19:11:38.750890+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:44.835997+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:47.114978+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:49.967035+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:54.537646+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-05 19:11:55.530819+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT *  [*]STUDENT_PROFILES"; SQL statement:
+SELECT *  STUDENT_PROFILES [42000-232]
+2026-09-24 07:37:27.667402+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTS_PROFILE" not found; SQL statement:
+SELECT * FROM STUDENTS_PROFILE [42102-232]
+2026-09-24 07:37:35.037575+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT_PROFILE" not found; SQL statement:
+SELECT * FROM STUDENT_PROFILE [42102-232]
+2026-09-24 07:53:12.094965+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM STUDENTS \000d\000a[*]SELECT * FROM STUDENT_PROFILES"; SQL statement:
+SELECT * FROM STUDENTS 
+SELECT * FROM STUDENT_PROFILES [42000-232]
+2026-09-24 07:53:16.136322+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM STUDENTS \000d\000a[*]SELECT * FROM STUDENT_PROFILES"; SQL statement:
+SELECT * FROM STUDENTS 
+SELECT * FROM STUDENT_PROFILES [42000-232]
