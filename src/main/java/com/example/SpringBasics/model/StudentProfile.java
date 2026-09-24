@@ -1,5 +1,6 @@
 package com.example.SpringBasics.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 /**
@@ -25,6 +26,7 @@ public class StudentProfile {
     private String address;
 
     @OneToOne(mappedBy = "profile")
+    @JsonIgnoreProperties("profile")
     private Student student;
 
     public StudentProfile(Long id, String bio, String phone, String address, Student student) {
