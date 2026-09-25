@@ -27,7 +27,7 @@ public class StudentService {
     }
 
     @Transactional
-    public Student updateStudent(Long id) {
+    public Student      updateStudent(Long id) {
         return studentRepoEntityManager.updateById(id);
     }
 

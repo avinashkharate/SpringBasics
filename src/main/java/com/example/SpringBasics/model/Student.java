@@ -21,6 +21,10 @@ public class Student {
     @JsonIgnoreProperties("student")
     private StudentProfile profile;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="dept_id", referencedColumnName = "depid")
+    private Department department;
+
 
     // ----- Constructors -----
 
@@ -30,6 +34,14 @@ public class Student {
 
     public void setProfile(StudentProfile profile) {
         this.profile = profile;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
     public Student() {}

@@ -1,6 +1,6 @@
 #FileLock
-#Thu Sep 24 07:52:25 IST 2026
-hostName=192.168.1.20
-id=1a0d13892143a2cbdc2d2ca306d1006a37356998b25
+#Fri Sep 25 08:47:48 IST 2026
+server=192.168.0.104\:57243
+hostName=LAPTOP-HDCT33ES
 method=file
-server=192.168.1.20\:50536
+id=1a0d691b6694be5811a6f03b558f6b2550cf7a75bfa
